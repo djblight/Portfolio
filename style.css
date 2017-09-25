@@ -3,7 +3,6 @@ body {
   background: rgba(216, 200, 200, 0.60);
   margin: 0;
 }
-
 * {
   box-sizing: border-box
 }
@@ -17,14 +16,12 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .navbar a {
   font-weight: 200;
   color: #312B2B;
   padding: 14px 16px;
   text-decoration: none;
 }
-
 .anchor {
   display: block;
   position: relative;
@@ -32,14 +29,6 @@ body {
   visibility: hidden;
 }
 
-.round {
-  margin-top: 220px;
-  margin-left: 310px;
-  margin-bottom: -50px;
-  width: 250px;
-  border-radius: 50%;
-  border: #312F2F solid 3px;
-}
 /*JUMBOTRON*/
 .jumbotron {
   height: 100vh; /*height to 100% of view height*/
@@ -56,7 +45,7 @@ body {
   font-size: 2em;
   color: #811C1D;
   text-align: center;
-  padding-top: 150px;
+    padding-top: 150px;
 }
 
 .jumbotron-text h1 {
@@ -70,6 +59,59 @@ body {
 
 .jumbotron-text p {
   margin: 0;
+}
+
+/* Image inside of jumbotron */
+.round {
+  margin-top: 220px;
+  margin-left: 310px;
+  margin-bottom: -50px;
+  width: 250px;
+  border-radius: 50%;
+  border: #312F2F solid 3px;
+}
+/* Clock inside the jumbotron*/
+.clock {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: #f9f9f9;
+  position: absolute;
+  top: 140px;
+  left: 118px;
+  width: 62px;
+}
+.rings {
+  position: relative;
+  width: 500px;
+  margin: 100px auto;
+}
+.rings .h {
+  position: absolute;
+  left: 10px;
+  top: 10px
+}
+.rings .m {
+  position: absolute;
+  left: 51px;
+  top: 51px
+}
+.rings .s {
+  position: absolute;
+  left: 96px;
+  top: 96px
+}
+.demo {
+  background: #222;
+  height: 300px;
+  width: 300px;
+  -webkit-border-radius: 300px 300px;
+  margin-left: 1200px;
+  margin-top: -550px;
+}
+input {
+  display: none;
 }
 
 /*SOCIAL LINKS*/
@@ -295,46 +337,3 @@ h4 {
   margin-left: 200px;
 }
 
-/* Clock */
-.clock {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-  color: #f9f9f9;
-  position: absolute;
-  top: 140px;
-  left: 118px;
-  width: 62px;
-}
-.rings {
-  position: relative;
-  width: 500px;
-  margin: 100px auto;
-}
-.rings .h {
-  position: absolute;
-  left: 10px;
-  top: 10px
-}
-.rings .m {
-  position: absolute;
-  left: 51px;
-  top: 51px
-}
-.rings .s {
-  position: absolute;
-  left: 96px;
-  top: 96px
-}
-.demo {
-  background: #222;
-  height: 300px;
-  width: 300px;
-  -webkit-border-radius: 300px 300px;
-  margin-left: 1200px;
-  margin-top: -550px;
-}
-input {
-  display: none;
-}
