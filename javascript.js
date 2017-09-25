@@ -66,19 +66,10 @@ $(function() {
             $m.val((m * 60)+s).trigger("change");
             $h.val((h*60)+m).trigger("change");
     
-            if (h >= 12) {
-                h = h-12;
-                
-            }
-    
-            if (h == 0) {
-                h = 12;
-            }
-    
+              
             $('span.hour').html(tp(h));
             $('span.minute').html(tp(m));
             $('span.second').html(tp(s));
             setTimeout("clock()", 30);
         }
         clock();
-
