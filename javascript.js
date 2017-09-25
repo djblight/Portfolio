@@ -66,7 +66,6 @@ $(function() {
             $m.val((m * 60)+s).trigger("change");
             $h.val((h*60)+m).trigger("change");
     
-              
             $('span.hour').html(tp(h));
             $('span.minute').html(tp(m));
             $('span.second').html(tp(s));

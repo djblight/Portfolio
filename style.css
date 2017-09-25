@@ -33,8 +33,8 @@ body {
 }
 
 .round {
-  margin-top: 80px;
-  margin-right: 680px;
+  margin-top: 70px;
+  margin-right: 710px;
   margin-bottom: -50px;
   width: 250px;
   border-radius: 50%;
@@ -164,7 +164,7 @@ h2 {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #D2E9F3;
+  background-color: #E9F7FD;
   border: 1px solid rgba(0,0,0,.125);
   border-radius: .25rem;
   margin-bottom: 30px;
@@ -261,7 +261,7 @@ h4 {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: #D2E9F3;
+  background: #E9F7FD;
   color: black;
   -webkit-transition: .5s ease all;
   transition: .5s ease all;
@@ -275,7 +275,7 @@ h4 {
 .contact button {
   display: block;
   width: 100%;
-  background: #fff;
+  background: white;
   border-radius: 4px;
   padding: 5px 10px;
   border: none;
@@ -288,6 +288,11 @@ h4 {
 
 .white-text {
   color: black;
+  font-weight: 500;
+  background-color: #E9F7FD;
+  width: 300px;
+  align-items: center;
+  margin-left: 200px;
 }
 
 /* Clock */
