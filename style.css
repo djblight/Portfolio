@@ -1,8 +1,9 @@
-body {
+body, html {
   font-family: 'Raleway', sans-serif;
   background: rgba(216, 200, 200, 0.60);
-  margin: 0;
-}
+  margin:0;
+  padding:0;
+  }
 * {
   box-sizing: border-box
 }
@@ -33,7 +34,8 @@ body {
 .jumbotron {
   height: 100vh; /*height to 100% of view height*/
   background-image: url(images/awning.jpg);
-  /* background: #31b0d5; background color to blue */
+  width: 100%;
+   /* background: #31b0d5; background color to blue */
   margin-bottom: 0; /*no bottom margin*/
   display: flex;
   flex-direction: column;
@@ -149,6 +151,8 @@ input {
   /*sets up flexbox*/
   display: flex;
   flex-direction: column;
+  margin:0;
+  padding:0;
 }
 
 .row {
