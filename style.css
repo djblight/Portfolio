@@ -67,6 +67,7 @@ body, html {
 .round {
   align-self: auto;
   width: 250px;
+  height: absolute;
   border-radius: 50%;
   padding: 0;
   margin: 0;
