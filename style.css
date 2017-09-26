@@ -70,9 +70,7 @@ margin: 0;
 
 /* Image inside of jumbotron */
 .round {
-  /* margin-top: 220px;
-  margin-left: 310px;
-  margin-bottom: -50px; */
+  align-self: auto;
   width: 220px;
   border-radius: 50%;
   border: #312F2F solid 3px;
