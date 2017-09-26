@@ -41,7 +41,7 @@ body, html {
   flex-direction: column;
 }
 .spacer {
-  height: 210px;
+  height: 250px;
 }
 
 .jumbotron-text {
@@ -300,11 +300,7 @@ h4 {
   background: #57D2FF;
   text-align: center;
 }
-.photo {
-height: 250px;
-padding: 0;
-margin: 0;
-}
+
 .contact {
   max-width: 500px;
   margin: 0 auto;
