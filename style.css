@@ -69,6 +69,8 @@ body, html {
   margin-left: 310px;
   margin-bottom: -50px; */
   width: 250px;
+  height: 250px;
+  image: url(images/david.jpg);
   border-radius: 50%;
   border: #312F2F solid 3px;
 }
