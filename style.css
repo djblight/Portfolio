@@ -300,7 +300,11 @@ h4 {
   background: #57D2FF;
   text-align: center;
 }
-
+.photo {
+height: 250px;
+padding: 0;
+margin: 0;
+}
 .contact {
   max-width: 500px;
   margin: 0 auto;
