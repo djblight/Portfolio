@@ -41,7 +41,7 @@ body, html {
   flex-direction: column;
 }
 .photo {
-height: 230px;
+height: 250px;
 padding: 0;
 margin: 0;
 }
@@ -71,8 +71,10 @@ margin: 0;
 /* Image inside of jumbotron */
 .round {
   align-self: auto;
-  width: 220px;
+  width: 250px;
   border-radius: 50%;
+  padding: 0;
+  margin: 0;
   border: #312F2F solid 3px;
 }
 /* Clock inside the jumbotron*/
