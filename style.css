@@ -40,6 +40,11 @@ body, html {
   display: flex;
   flex-direction: column;
 }
+.photo {
+height: 250px;
+padding: 0;
+margin: 0;
+}
 
 .jumbotron-text {
   /*TAGLINE UNDER NAME*/
