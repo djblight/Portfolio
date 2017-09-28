@@ -18,10 +18,19 @@ body, html {
   display: flex;
   justify-content: center;
 }
+.nav-menu li {
+  display: inline;
+}
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #FEFD20;
+  color: #0E33A9;
+}
 .navbar a {
   font-weight: 200;
   color: #312B2B;
   padding: 14px 16px;
+  display: inline;
   text-decoration: none;
 }
 .anchor {
