@@ -8,36 +8,189 @@ body, html {
   box-sizing: border-box
 }
 
-/*NAVBAR*/
-.navbar {
-  background-color: #57D2FF;
-  z-index: 4;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+/* Modal start */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
   width: 100%; /* Full width */
-  display: flex;
-  justify-content: center;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.nav-menu li {
-  display: inline;
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  margin-left: 180px;
+  padding: 15px;
+  padding-top: 40px;
+  padding-left: 100px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
-/* Change the color of links on hover */
-.navbar a:hover {
-  background-color: #FEFD20;
-  color: #0E33A9;
+
+/* The Close Button */
+.close {
+  color: #F70909;
+  float: right;
+  font-size: 100px;
+  font-weight: 80px;
 }
-.navbar a {
-  font-weight: 200;
-  color: #312B2B;
-  padding: 14px 16px;
-  display: inline;
+#myBtn {
+  height: 30px;
+  width: 200px;
+  align-self: center;
+  background-color: #31b0d5;
+}
+#myBtn:hover {
+  color: red;
+  background-color: yellow;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
   text-decoration: none;
+  cursor: pointer;
 }
-.anchor {
-  display: block;
-  position: relative;
-  top: -70px;
-  visibility: hidden;
+/* Modal End */
+/*NAVBAR*/
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+    width: 100%;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.navbar {
+  position: fixed;
+  z-index: 4;
+}
+/* Basic Styles */
+body {
+  background-color: #ece8e5;
+}
+nav {
+	height: 40px;
+	width: 100%;
+	background: #455868;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+  border-bottom: 2px solid #283744;
+}
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 40px;
+}
+nav li {
+	display: inline;
+	float: left;
+}
+nav a {
+	color: #fff;
+	display: inline-block;
+	width: 158.3px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-shadow: 1px 1px 0px #283744;
+}
+nav li a {
+	border-right: 1px solid #576979;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:hover, nav a:active {
+	background-color: #8c99a4;
+}
+nav a#pull {
+  display: none;
+ 
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+	nav { 
+  		height: auto;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	nav li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #576979;
+		border-right: 1px solid #576979;
+	}
+  	nav a {
+	  	text-align: center;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+}
+
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
+	nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a#pull {
+		display: block;
+		background-color: #283744;
+		width: 480px;
+		position: relative;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	nav li a {
+		border-bottom: 1px solid #576979;
+	}
 }
 
 /*JUMBOTRON*/
@@ -76,7 +229,7 @@ body, html {
   margin: 0;
 }
 
-/* Image inside of jumbotron */
+/* Clock Image */
 .round {
   align-self: auto;
   width: 250px;
@@ -85,7 +238,7 @@ body, html {
   margin: 0;
   border: #312F2F solid 3px;
 }
-/* Clock inside the jumbotron*/
+
 .clock {
   font-family: Raleway;
   font-weight: bold;
@@ -120,18 +273,18 @@ body, html {
   top: 96px
 }
 .demo {
-  background: #2B868B;
+  background: #6DF265;
   height: 300px;
   width: 100%;
   -webkit-border-radius: 300px 300px;
-  align-self: auto;
+  align-self: center;
   margin-bottom: 130px;
   padding-top: 0;
 }
 input {
   display: none;
 }
-
+/* eiffel tower */
 #wrapper{
   position: relative;
   width:100%;
@@ -229,11 +382,11 @@ input {
   margin-left:1000px;
 }
 
-@media(max-width:768px){
+/* @media(max-width:768px){
   body{
     font-size:75%;
   }
-}
+} */
 
 /*SOCIAL LINKS*/
 .ul-social {
@@ -300,6 +453,7 @@ input {
   flex: 0 0 80%;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .box-shadow {
@@ -368,6 +522,7 @@ h4 {
   margin-bottom: 30px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
   height: 250px;
+  width: 100%;
 }
 
 .project-image {
@@ -389,7 +544,9 @@ h4 {
   flex-direction: column;
 }
 
-
+.project-content a {
+  align-self: center;
+}
 
 /*SKILLS*/
 .ul-skills {
@@ -419,37 +576,7 @@ h4 {
   margin: 0 auto;
 }
 
-.contact input, .contact textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  border: none;
-  margin-bottom: 10px;
-  background: #E9F7FD;
-  color: black;
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
-}
 
-.contact textarea {
-  height: 150px;
-  resize: none;
-}
-
-.contact button {
-  display: block;
-  width: 100%;
-  background: white;
-  border-radius: 4px;
-  padding: 5px 10px;
-  border: none;
-  color: #3498db;
-  font-weight: 700;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
-}
 
 .white-text {
   color: black;
@@ -457,6 +584,6 @@ h4 {
   background-color: #E9F7FD;
   width: 300px;
   align-items: center;
-  margin-left: 200px;
+  margin-left: 205px;
 }
 

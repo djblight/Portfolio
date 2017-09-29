@@ -2,29 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>David Blight</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <!-- BEGIN NAVBAR -->
-    <div class="navbar navbar-fixed-top" role="navigation">
+    <div class="navbar" role="navigation">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav-menu">
+          <nav class="clearfix">
+              <ul class="clearfix">
                 <li><a href="#home"><strong>Home</strong></a></li>
                 <li><a href="#about"><strong>About</strong></a></li>
                 <li><a href="#time"><strong>What Time Is It?</strong></a></li>
@@ -36,16 +31,15 @@
                 <li><a href="#skills"><strong>Skills</strong></a></li>
                 <li><a href="#contact"><strong>Contact</strong></a></li>
             </ul>
-          </div>
+              <a href="#" id="pull">Menu</a>
+            </nav>
         </div><!--/.container-fluid -->
     </div>
-
     <!-- END NAVBAR -->
 
       <!-- HEADER -->
       <div class="jumbotron">
         <a class="anchor" name="home"></a>
-
         <!-- </div> -->
         <div class="jumbotron-text">
           <div class="spacer">
@@ -79,14 +73,12 @@
       </div>
       <!-- END HEADER -->
 
-
-
       <!-- BEGIN ABOUT -->
       <div class="row white box-shadow">
+          <a class="anchor" name="about"></a>
         <div class="side-content"></div>
         <div class="main-content">
           <div class="content-header">
-            <a class="anchor" name="about"></a>
             <h2>About</h2>
           </div>
           <div class="content-body">
@@ -95,9 +87,9 @@
               <p>While managing 3 automotive service programs for AAA Carolinas I again used my web and database design experience and implemented various IT technology/solution platforms facilitating report/service automation such as: SQL database on UNIX OS utilizing Hyperion reporting platform, automated ERS service deployment utilizing Automated Vehicle Locating (AVL) technology, interactive website for AAA Carolinas branch offices and contracted service provider network use.</p>
               <p>I yet again I found myself utilizing my web development and database skills while working for a marketing company.  In my key account sales role, I was responsible for marketing campaign strategy development and overall project management for client projects.  While in this role I sold, designed and managed the first B2B website project produced by the company.  This was when I realized that I was not only drawn to web development but that it was where I was meant to be.</p>
               <p>Today, I am experienced in full-stack web development, formally trained in the UNC Charlotte Web Development program.  My experience encompasses the use of back-end frameworks like Node.js and for persistence and caching I have used Firebase, MySQL and MongoDB.  While my front-end experience includes HTML, CSS, JavaScript, jQuery, Bootstrap and ReactJS.  I also have experience deploying in the cloud with Heroku.</p>
-              <p>I am proud to say that I am a life-long learner with a passion for web development with experience in: HTML, CSS, Javascript, jQuery, Sequelize, Bootstrap, Firebase, Heroku, Node.js, React.js, SQL, MySQL, Visual Studio, Postman, Sublime, Slack, GitHub, Express, Handlebars.js, API's, AJAX, Babel.js, JawsDB and MongoDB.</p>
+              <p>I am proud to say that I am a life-long learner with a passion for web development with experience in: HTML, CSS, Javascript, jQuery, Sequelize, Bootstrap, Firebase, Heroku, Node.js, React.js, SQL, MySQL, Visual Studio, Postman, Sublime, Slack, GitHub, Express, Handlebars.js, API's, AJAX, Babel.js, JawsDB, MongoDB and C#.</p>
               <p>I am very active in the coding community, which you can view under my Meetup Groups.  I participate in training events as well as civic Hackathons to help others live a more fullfilling life through the use of technology. I view each day as an opportunity to solve new challenges with the latest and best tools that today's technology has to offer.  I believe that the way that it has always been is not necessarily how it has to stay.  There is always an opportunity to improve and excel and I don't want to miss one minute of it!
-            </div>
+              </div>
         </div>
         <div class="side-content"></div>
       </div>
@@ -107,12 +99,8 @@
       <div class="row white box-shadow">
           <div class="side-content"></div>
           <a class="anchor" name="time"></a>
-          <br>
-          <br>
-
           <div class="main-content">
-            <!-- <div class="content-header"> -->
-              
+            <!-- <div class="content-header"> -->         
           <link href='https://fonts.googleapis.com/css?family=Raleway:600,700' rel='stylesheet' type='text/css'>
           <div class="demo">
               <div class="rings">
@@ -137,15 +125,9 @@
         <!-- END Time -->
 
         <section id="wrapper" class="skewed">
+            <a class="anchor" name="fun"></a>
             <div class="layer bottom">
               <div class="content-wrap">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                  <a class="anchor" name="fun"></a>
                 <div class="content-body">
                   <h1>Look Sharp</h1>
                   <p>Bold contrasting color choices can offer an exciting enviroment to make your site stand out in the crowd. Cool colors are great but also consider the dicotomy of light and dark. Is the bold choice for you?</p>
@@ -314,7 +296,7 @@
             <!-- CARD #1 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="images/train.jpg" height="250" width="350">
+                <img src="./images/train.jpg" height="250" width="320">
               </div>
               <div class="project-content">
                 <h4>Train Scheduler</h4>
@@ -325,7 +307,7 @@
             <!-- CARD #2 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="images/gardening.jpg" height="250" width="350">
+                <img src="./images/gardening.jpg" height="250" width="320">
               </div>
               <div class="project-content">
                 <h4>Gardening App</h4>
@@ -336,7 +318,7 @@
             <!-- CARD #3 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="images/giphy.jpg" height="250" width="350">
+                <img src="./images/giphy.jpg" height="250" width="320">
               </div>
               <div class="project-content">
                 <h4>AJAX-GIPHY App</h4>
@@ -347,7 +329,7 @@
             <!-- CARD #4 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="images/youtube.jpg" height="250" width="350">
+                <img src="./images/youtube.jpg" height="250" width="320">
               </div>
               <div class="project-content">
                 <h4>YouTube Video Search App</h4>
@@ -358,7 +340,7 @@
             <!-- CARD #5 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="images/trivia.jpg" height="250" width="350">
+                <img src="./images/trivia.jpg" height="250" width="320">
               </div>
               <div class="project-content">
                 <h4>Trivia Game</h4>
@@ -369,7 +351,7 @@
             <!-- CARD #6 -->
             <div class="project-card">
                 <div class="project-image">
-                  <img src="images/crystals.jpg" height="250" width="350">
+                  <img src="./images/crystals.jpg" height="250" width="320">
                 </div>
                 <div class="project-content">
                   <h4>Guessing Game</h4>
@@ -377,6 +359,37 @@
                   <a href="https://djblight.github.io/week-4-game/" target="_blank">Try it Out!</a>
                 </div>
               </div>
+              <!-- CARD #7 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/chart.PNG" height="250" width="320">
+              </div>
+              <div class="project-content">
+                <h4>Customer Re-engagement</h4>
+                <p>To leverage the data captured from the rebate card records of a fortune 500 client I created a robust customer re-engagement campaign to capitalize on their newly entered data set. Intent was to move the customer to action making additional purchases and to seek referrals for additional market capture.
+                  </p>
+                  <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Chart</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="./images/chart.PNG" height="640" width="800">
+                  </div>
+                </div>
+              </div>
+            </div>
+               <!-- CARD #8 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/graphic1.PNG" height="250" width="320">
+              </div>
+              <div class="project-content">
+                <h4>Graphic Designs and Logos</h4>
+                <p>I have designed custom graphics for many client event and marketing campaigns, like the tri-fold event pamphlet cover shown here. I have also designed logos for clients seeking to brand a new company as well as for clients seeking to re-brand an existing company.</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="side-content-sm"></div>
@@ -418,6 +431,7 @@
               <li class="li-skills">Babel.js</li>
               <li class="li-skills">JawsDB</li>
               <li class="li-skills">MongoDB</li>
+              <li class="li-skills">C#</li>
             </ul>
           </div>
         </div>
