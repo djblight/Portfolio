@@ -382,12 +382,12 @@ a.control_next {
 .clock {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 36px;
   text-align: center;
   color: #f9f9f9;
   position: absolute;
-  top: 140px;
-  left: 118px;
+  top: 225px;
+  left: 80px;
   width: 62px;
 }
 .rings {
@@ -399,22 +399,22 @@ a.control_next {
 }
 .rings .h {
   position: absolute;
-  left: 10px;
+  left: -90px;
   top: 10px
 }
 .rings .m {
   position: absolute;
-  left: 51px;
-  top: 51px
+  left: -28px;
+  top: 73px
 }
 .rings .s {
   position: absolute;
-  left: 96px;
-  top: 96px
+  left: 46px;
+  top: 146px
 }
 .demo {
   background: #6DF265;
-  height: 300px;
+  height: 500px;
   width: 100%;
   -webkit-border-radius: 300px 300px;
   align-self: center;
