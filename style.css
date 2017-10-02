@@ -353,6 +353,11 @@ a.control_next {
   border-radius: 2px 0 0 2px;
 }
 
+.slider_option :hover {
+  background-color: yellow;
+  color: red;
+}
+
 .slider_option {
   position: relative;
   margin: 20px auto;
@@ -362,7 +367,6 @@ a.control_next {
   font-weight: 600;
   color: #811C1D;
 }
-
 
 
 /* Clock Image */
