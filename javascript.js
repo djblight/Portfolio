@@ -118,27 +118,90 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Modal
 // Get the modal
-var modal = document.getElementById('myModal');
-
+var modal1 = document.getElementById('myModal1');
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
+var btn1 = document.getElementById("myBtn1");
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
+var span = document.getElementsByClassName("close1")[0];
 // When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
+btn1.onclick = function() {
+    document.getElementById("myModal1").style.display = "block";
+};
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
+    modal1.style.display = "none";
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modal1) {
+        modal1.style.display = "none";
     }
 }
+// Modal
+// Get the modal
+var modal2 = document.getElementById('myModal2');
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
+// for first script
+btn2.onclick = function() {
+    document.getElementById("myModal2").style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal2.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
+jQuery(document).ready(function ($) {
+    
+      $('#checkbox').change(function(){
+        setInterval(function () {
+            moveRight();
+        }, 3000);
+      });
+      
+        var slideCount = $('#slider ul li').length;
+        var slideWidth = $('#slider ul li').width();
+        var slideHeight = $('#slider ul li').height();
+        var sliderUlWidth = slideCount * slideWidth;
+        
+        $('#slider').css({ width: slideWidth, height: slideHeight });
+        
+        $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+        
+        $('#slider ul li:last-child').prependTo('#slider ul');
+    
+        function moveLeft() {
+            $('#slider ul').animate({
+                left: + slideWidth
+            }, 200, function () {
+                $('#slider ul li:last-child').prependTo('#slider ul');
+                $('#slider ul').css('left', '');
+            });
+        };
+    
+        function moveRight() {
+            $('#slider ul').animate({
+                left: - slideWidth
+            }, 200, function () {
+                $('#slider ul li:first-child').appendTo('#slider ul');
+                $('#slider ul').css('left', '');
+            });
+        };
+    
+        $('a.control_prev').click(function () {
+            moveLeft();
+        });
+    
+        $('a.control_next').click(function () {
+            moveRight();
+        });
+    
+    });

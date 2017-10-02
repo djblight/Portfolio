@@ -10,7 +10,19 @@ body, html {
 
 /* Modal start */
 /* The Modal (background) */
-.modal {
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal2 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -24,7 +36,17 @@ body, html {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal1-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  margin-left: 180px;
+  padding: 15px;
+  padding-top: 40px;
+  padding-left: 100px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal2-content {
   background-color: #fefefe;
   margin: 5% auto; /* 15% from the top and centered */
   margin-left: 180px;
@@ -36,25 +58,42 @@ body, html {
 }
 
 /* The Close Button */
-.close {
+.close1 {
   color: #F70909;
   float: right;
   font-size: 100px;
   font-weight: 80px;
 }
-#myBtn {
+.close2 {
+  color: #F70909;
+  float: right;
+  font-size: 100px;
+  font-weight: 80px;
+}
+#myBtn1 {
   height: 30px;
   width: 200px;
   align-self: center;
   background-color: #31b0d5;
 }
-#myBtn:hover {
+#myBtn1:hover {
   color: red;
   background-color: yellow;
 }
-
-.close:hover,
-.close:focus {
+#myBtn2 {
+  height: 30px;
+  width: 200px;
+  align-self: center;
+  background-color: #31b0d5;
+}
+#myBtn2:hover {
+  color: red;
+  background-color: yellow;
+}
+.close1:hover,
+.close2:hover,
+.close1:focus,
+.close2:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -83,36 +122,41 @@ body {
   background-color: #ece8e5;
 }
 nav {
-	height: 40px;
+	height: 30px;
 	width: 100%;
 	background: #455868;
-	font-size: 11pt;
+	font-size: 10pt;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-weight: bold;
-	position: relative;
-  border-bottom: 2px solid #283744;
+  position: relative;
+  margin-top: -5px;
+  padding-top: 5px;
 }
 nav ul {
 	padding: 0;
 	margin: 0 auto;
 	width: 100%;
-	height: 40px;
+  height: 30px;
+  margin-top: -5px;
+  padding-top: 5px;
 }
 nav li {
 	display: inline;
-	float: left;
+  float: left;
+  text-align: center;
+  width: 143.9px;
+  margin-top: -5px;
+  padding-top: 5px;
 }
 nav a {
 	color: #fff;
 	display: inline-block;
-	width: 158.3px;
+	width: auto;
 	text-align: center;
-	text-decoration: none;
-	line-height: 40px;
-	text-shadow: 1px 1px 0px #283744;
+  text-decoration: none;
 }
 nav li a {
-	border-right: 1px solid #576979;
+	/* border-right: 1px solid #576979; */
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -228,6 +272,98 @@ nav a#pull {
 .jumbotron-text p {
   margin: 0;
 }
+
+/* Slider */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+html {
+  border-top: 5px solid #fff;
+  background: #CCE5ff;
+  color: #2a2a2a;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  color: #811C1D;
+  text-align: center;
+  font-weight: 800;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 600px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: none;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 55px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 20px auto;
+  padding-left: 110px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #811C1D;
+}
+
+
 
 /* Clock Image */
 .round {
@@ -575,8 +711,6 @@ h4 {
   max-width: 500px;
   margin: 0 auto;
 }
-
-
 
 .white-text {
   color: black;
